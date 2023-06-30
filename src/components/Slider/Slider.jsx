@@ -4,7 +4,7 @@ import './Slider.css'
 const Slider = () => {
   return (
     <div className='main-slider'>
-        
+        <img src="./assets/logo.png" alt="main-logo" />
     </div>
   )
 }
