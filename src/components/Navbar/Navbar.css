@@ -1,0 +1,39 @@
+.main-menu{
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-menu-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 15px 0;
+}
+
+.main-menu-button > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+.main-menu-icon{
+    height: 40px;
+}
+
+.brand-logo{
+    height: 70px;
+    width: 80px;
+}
