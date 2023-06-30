@@ -3,6 +3,7 @@
 
 :root{
     --main-bg-color: #0199a1;
+    --main-border-color: #085659;
     margin: 0 auto;
     font-family: 'Agdasima', sans-serif;
 }

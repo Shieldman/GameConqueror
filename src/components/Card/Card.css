@@ -1,0 +1,22 @@
+.card{
+    width: 300px;
+    box-shadow: 8px 8px 5px lightblue;
+}
+
+.card-image{
+    width: 300px;
+}
+
+.card-game-name{
+    border: solid 2px var(--main-bg-color);
+    text-align: center;
+}
+
+.card-game-name > p {
+    margin: 0 auto;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: var(--main-bg-color);
+    color: white;
+}
