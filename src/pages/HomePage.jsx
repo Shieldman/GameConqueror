@@ -1,14 +1,14 @@
-import React from 'react'
-import Slider from '../components/Slider/Slider'
-import CardsModule from '../components/CardsModule/CardsModule'
+import React from "react";
+import Slider from "../components/Slider/Slider";
+import CardsModule from "../components/CardsModule/CardsModule";
 
 const HomePage = () => {
   return (
     <>
-    <Slider />
-    <CardsModule />
+      <Slider />
+      <CardsModule />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

@@ -1,8 +1,13 @@
 import React from 'react'
+import SudokuBoard from '../components/SudokuBoard/SudokuBoard'
 
 const SudokuPage = () => {
   return (
-    <div>SudokuPage</div>
+    <>
+      <h1>Sudoku!</h1>
+      <SudokuBoard />
+      
+    </>
   )
 }
 
