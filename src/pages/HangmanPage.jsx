@@ -1,8 +1,11 @@
 import React from 'react'
+import HangmanBoard from '../components/HangmanBoard/HangmanBoard'
 
 const HangmanPage = () => {
   return (
-    <div>HangmanPage</div>
+    <>
+      <HangmanBoard />
+    </>
   )
 }
 

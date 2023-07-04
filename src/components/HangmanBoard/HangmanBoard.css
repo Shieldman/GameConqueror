@@ -1,0 +1,32 @@
+.letter-box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--main-bg-color);
+}
+
+.hangman-board{
+    display: flex;
+    gap: 10px;
+}
+
+.play-zone {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.input-and-used-letters{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: end;
+    align-items: center;
+}
+
+.input-and-used-letters > label{
+    width: 200px;
+}
+
+.input-and-used-letters > label > input{
+    width: 100%;
+}
