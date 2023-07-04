@@ -1,8 +1,12 @@
 import React from 'react'
+import TicTacToeBoard from '../components/TicTacToeBoard/TicTacToeBoard'
 
 const TicTacToePage = () => {
   return (
-    <div>TicTacToePage</div>
+    <>
+      <h1>Tic Tac Toe!</h1>
+      <TicTacToeBoard />
+    </>
   )
 }
 

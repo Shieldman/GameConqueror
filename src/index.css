@@ -19,3 +19,15 @@ main{
     align-items: center;
     gap: 30px;
 }
+
+.game-buttons{
+    background-color: var(--main-bg-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 30px 0 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 200px;
+}
