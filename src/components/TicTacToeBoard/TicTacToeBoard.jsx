@@ -14,7 +14,7 @@ const TicTacToeBoard = () => {
     null,
     null,
   ]);
-  const [turn, setTurn] = useState("Player ❌");
+  const [turn, setTurn] = useState((Math.random()>0.5?"Player ❌":"Player ⭕"));
   const [winner, setWinner] = useState(null);
 
   const handleStartGame = () => {

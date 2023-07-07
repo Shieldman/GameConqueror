@@ -93,7 +93,7 @@ const HangmanBoard = () => {
               ) : (
                 <>
                   <div className="looser">
-                    <h2>You lost! 😥</h2>
+                    <h2>You lost! 😥 || Solution: {word}</h2>
                     <button
                       className="game-buttons"
                       onClick={() => {

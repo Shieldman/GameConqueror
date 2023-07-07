@@ -25,7 +25,8 @@ const SudokuBoard = () => {
     const solved = sudoku.solvepuzzle(sudokuBoard);
     console.log(solved);
     console.log(sudokuBoard);
-    if (solved === sudokuBoard) {
+    if (JSON.stringify(solved) == JSON.stringify(sudokuBoard)) {
+      console.log("its a win");
       setSolutionCheck(<h3>Congratulations! You completed the sudoku</h3>);
     } else {
       setSolutionCheck(
@@ -52,6 +53,11 @@ const SudokuBoard = () => {
         </div>
       );
     }
+  };
+
+  const handleShowSolution = () => {
+    const solved = sudoku.solvepuzzle(sudokuBoard);
+    setSudokuBoard(solved);
   };
 
   return (
@@ -106,10 +112,28 @@ const SudokuBoard = () => {
       </div>
       <div className="board-controls">
         {!sudokuBoard.includes(null) ? (
-          <button className="game-buttons" onClick={handleCheckSolution}>
-            Check solution
-          </button>
-        ) : null}
+          <>
+            <button className="game-buttons" onClick={handleCheckSolution}>
+              Check solution
+            </button>
+            <button className="game-buttons" onClick={handleShowSolution}>
+              Show solution
+            </button>
+          </>
+        ) : (
+          <>
+            <button
+              className="button-disabled"
+              onClick={handleCheckSolution}
+              disabled={true}
+            >
+              Check solution
+            </button>
+            <button className="game-buttons" onClick={handleShowSolution}>
+              Show solution
+            </button>
+          </>
+        )}
         <button
           className="game-buttons"
           onClick={() => {
