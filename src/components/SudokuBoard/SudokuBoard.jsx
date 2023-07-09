@@ -139,6 +139,7 @@ const SudokuBoard = () => {
           className="game-buttons"
           onClick={() => {
             setGameCount(gameCount+1);
+            setSolutionCheck()
           }}
         >
           Reset game
