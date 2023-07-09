@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import './Navbar.css'
+import Logout from "../Logout/Logout";
 
 const Navbar = () => {
   return (
