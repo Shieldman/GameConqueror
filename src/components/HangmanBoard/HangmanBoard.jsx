@@ -65,9 +65,8 @@ const HangmanBoard = () => {
         <>
           {word ? (
             <div className="hangman-board">
-              {
-              solution.map((letter, index) => (
-              <div className="letter-box" key={index} id={letter}></div>
+              {solution.map((letter, index) => (
+                <div className="letter-box" key={index} id={letter}></div>
               ))}
             </div>
           ) : null}
@@ -97,7 +96,14 @@ const HangmanBoard = () => {
                     <button
                       className="game-buttons"
                       onClick={() => {
-                        window.location.reload();
+                        setStartGame(false);
+                        setWord();
+                        setSolution([]);
+                        setMistakes(1);
+                        setGameEnd(false);
+                        setWrongLetters([]);
+                        setPartialSolution(0);
+                        setEndGame(false);
                       }}
                     >
                       Play Again!
