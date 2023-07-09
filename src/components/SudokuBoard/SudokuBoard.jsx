@@ -6,11 +6,12 @@ const SudokuBoard = () => {
   const [sudokuBoard, setSudokuBoard] = useState([]);
   const [modifiedIndex, setModifiedIndex] = useState([]);
   const [solutionCheck, setSolutionCheck] = useState(null);
+  const gamecount=1;
 
   useEffect(() => {
     const newBoard = sudoku.makepuzzle();
     setSudokuBoard(newBoard);
-  }, []);
+  }, [gamecount]);
 
   const handleInputNumber = (ev) => {
     const updatedBoard = [...sudokuBoard];
@@ -137,7 +138,7 @@ const SudokuBoard = () => {
         <button
           className="game-buttons"
           onClick={() => {
-            window.location.reload();
+            gamecount++;
           }}
         >
           Reset game
