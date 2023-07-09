@@ -125,7 +125,14 @@ const HangmanBoard = () => {
           <button
             className="game-buttons"
             onClick={() => {
-              window.location.reload();
+              setStartGame(false);
+              setWord();
+              setSolution([]);
+              setMistakes(1);
+              setGameEnd(false);
+              setWrongLetters([]);
+              setPartialSolution(0);
+              setEndGame(false);
             }}
           >
             Play Again!
