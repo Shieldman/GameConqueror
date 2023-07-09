@@ -11,7 +11,7 @@ const SudokuBoard = () => {
   useEffect(() => {
     const newBoard = sudoku.makepuzzle();
     setSudokuBoard(newBoard);
-  }, [gamecount]);
+  }, [gameCount]);
 
   const handleInputNumber = (ev) => {
     const updatedBoard = [...sudokuBoard];
