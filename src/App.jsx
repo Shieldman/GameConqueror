@@ -6,10 +6,10 @@ import FreeLayout from "./layouts/FreeLayout";
 import { ProtectedLayout } from "./layouts/ProtectedLayout";
 
 import Navbar from "./components/Navbar/Navbar";
-import HomePage from "./Pages/HomePage";
-import SudokuPage from "./Pages/SudokuPage";
-import HangmanPage from "./Pages/HangmanPage";
-import TicTacToePage from "./Pages/TicTacToePage";
+import HomePage from "./pages/HomePage";
+import SudokuPage from "./pages/SudokuPage";
+import HangmanPage from "./pages/HangmanPage";
+import TicTacToePage from "./pages/TicTacToePage";
 import LoginPage from "./pages/LoginPage";
 
 function App() {
